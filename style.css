@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #dad7cd;
+}
+
+.title{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3rem;
+    font-family: 'Times New Roman', sans-serif;
+    color: sienna;
+}
+
+.container{
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 60px auto;
+}
+
+.container > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.controls {
+    padding: 20px 40px;
+    background-color: #012a4a;
+    border-radius: 5px;
+    color: white;
+
+}
+.color-select{
+    margin-bottom: 20px;
+}
+
+.grid-size{
+    border: 1px solid white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color-select, .grid-size{
+    display: flex;
+    align-items: center;
+    /* flex-direction: ; */
+    gap: 10px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', sans-serif;
+    color: #a9d6e5;
+    font-weight: bold;
+    width: 100%;
+    
+}
+
+#color {
+    border: none;
+    width: 150px;
+    height: 50px;
+    background-color: #012a4a;
+
+}
+
+.clear, .toogle-lines{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #a9d6e5;
+    font-weight: bold;
+    background-color: #012a4a;
+    border: 1px solid #a9d6e5;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border-radius: 5%;
+    margin: 5px;
+}
+
+#size {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* #grid-container{
+    width: 600px;
+    height: 600px;
+    border: 1px solid gray;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+} */
+
+
+#grid-container{
+    width: 600px;
+    height: 600px;
+    border: 1px solid gray;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.grid-border{
+    width: 650px;
+    height: 650px;
+    border-radius: 5px;
+    background-color: #012a4a;
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(216, 215, 215);
+}
+
+.grid-size {
+    border: 1px solid #a9d6e5;
+    justify-content: center;
+    margin-top: 40px;
+}
+

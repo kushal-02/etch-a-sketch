@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <h1 class="title">Etch-a-Sketch</h1>
+    <div class="container">
+        <div class="controls">
+            <div class="color-select">
+                <input type="color" id="color" oninput="paint(this.value)" />
+                <p>Color</p>
+            </div>
+            <div class="grid-size">16 X 16</div>
+            <input type="range" id="size" min="1" max="100" oninput="createGrid(this.value)" />
+            <br>
+            <button class="toogle-lines"  onclick="toggleGrid()">Toggle Grid Lines</button>
+            <button class="clear">Clear</button>
+        </div>
+        <div class="grid-border">
+            <div id="grid-container"></div>
+        </div>
+    </div>
+</body>
+</html>
